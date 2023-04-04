@@ -1,12 +1,12 @@
 # Dynamic Nonparametric Clustering of Multivariate Panel Data
 Code to reproduce the results of Dynamic Nonparametric Clustering of Multivariate Panel Data (Custodio João, Schaumburg, Lucas and Schwaab, 2022, Journal of Financial Econometrics, <https://doi.org/10.1093/jjfinec/nbac038>).
 
-Running Simulate_clustering.py will generate a csv files with simulations results. This is used by Simulation_plots.py to reproduce Figure 5 of the paper.
+Running `Simulate_clustering.py` will generate a csv files with simulations results. This is used by `Simulation_plots.py` to reproduce Figure 5 of the paper.
 
-elastico.py constains all functions needed for the clustering algorithm.
-simulate_fcts.py contain the function that simulates the data.
+`elastico.py` constains all functions needed for the clustering algorithm.
+`simulate_fcts.py` contain the function that simulates the data.
 
-elastico.py can be used to cluster other datasets. Typical usage might be:
+`elastico.py` can be used to cluster other datasets. Typical usage might be:
 ```
 model = el.CLModel(data, ident)
 H = model.elastic(epsilon=epsilon)
